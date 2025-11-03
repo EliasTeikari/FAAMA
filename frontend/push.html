@@ -3,7 +3,176 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Push</title>
+    <title>Push Workout</title>
+    <link rel="stylesheet" href="style/style.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Push Workout</h1>
+    <div id="workout-container">
+      <div class="exercise" id="exercise1">
+        <h2>Low Incline DB Press</h2>
+        <div class="exercise-image-container">
+          <img
+            src="/frontend/assets/images/push-images/Low-Incline-DB-Press.png"
+            alt="Low Incline DB Press demonstration"
+            class="exercise-image"
+          />
+        </div>
+        <div class="warm-up">
+          <h3>Warm-up Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1: 50% weight - 12 reps<br />
+            <input type="checkbox" /> Set 2: 70% weight - 8 reps
+          </div>
+        </div>
+        <div class="working-sets">
+          <h3>Working Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1: 8-12 reps<br />
+            <input type="checkbox" /> Set 2: 8-12 reps<br />
+            <input type="checkbox" /> Set 3: 8-12 reps
+          </div>
+        </div>
+        <button
+          class="complete-button"
+          onclick="markExerciseComplete('exercise1')"
+        >
+          Mark Exercise Complete
+        </button>
+      </div>
+
+      <div class="exercise" id="exercise2">
+        <h2>Overhead Cable Triceps Extension (Bar)</h2>
+        <div class="exercise-image-container">
+          <img
+            src="./assets/images/push-images/Overhead-Cable-Triceps-Extension.png"
+            alt="Overhead Cable Triceps Extension (Bar) demonstration"
+            class="exercise-image"
+          />
+        </div>
+        <div class="working-sets">
+          <h3>Working Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1: 10-15 reps<br />
+            <input type="checkbox" /> Set 2: 10-15 reps<br />
+            <input type="checkbox" /> Set 3: 10-15 reps
+          </div>
+        </div>
+        <button
+          class="complete-button"
+          onclick="markExerciseComplete('exercise2')"
+        >
+          Mark Exercise Complete
+        </button>
+      </div>
+
+      <div class="exercise" id="exercise3">
+        <h2>Bent-Over Cable Pec Flye (w/ Integrated Partials)</h2>
+        <div class="exercise-image-container">
+          <img
+            src="./assets/images/push-images/Bent-Over Cable Pec Flye (w: Integrated Partials).png"
+            alt="Bent-Over Cable Pec Flye demonstration"
+            class="exercise-image"
+          />
+        </div>
+        <div class="working-sets">
+          <h3>Working Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1: 12-15 reps<br />
+            <input type="checkbox" /> Set 2: 12-15 reps<br />
+            <input type="checkbox" /> Set 3: 12-15 reps
+          </div>
+        </div>
+        <button
+          class="complete-button"
+          onclick="markExerciseComplete('exercise3')"
+        >
+          Mark Exercise Complete
+        </button>
+      </div>
+
+      <div class="exercise" id="exercise4">
+        <h2>Close-Grip Push Up</h2>
+        <div class="exercise-image-container">
+          <img
+            src="./assets/images/push-images/Close-Grip Push Up.png"
+            alt="Close-Grip Push Up demonstration"
+            class="exercise-image"
+          />
+        </div>
+        <div class="working-sets">
+          <h3>Working Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1: To failure<br />
+            <input type="checkbox" /> Set 2: To failure<br />
+            <input type="checkbox" /> Set 3: To failure
+          </div>
+        </div>
+        <button
+          class="complete-button"
+          onclick="markExerciseComplete('exercise4')"
+        >
+          Mark Exercise Complete
+        </button>
+      </div>
+
+      <div class="exercise" id="exercise5">
+        <h2>Cable Crunch</h2>
+        <div class="exercise-image-container">
+          <img
+            src="./assets/images/push-images/Cable-Crunch.png"
+            alt="Cable Crunch demonstration"
+            class="exercise-image"
+          />
+        </div>
+        <div class="working-sets">
+          <h3>Working Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1: 15-20 reps<br />
+            <input type="checkbox" /> Set 2: 15-20 reps<br />
+            <input type="checkbox" /> Set 3: 15-20 reps
+          </div>
+        </div>
+        <button
+          class="complete-button"
+          onclick="markExerciseComplete('exercise5')"
+        >
+          Mark Exercise Complete
+        </button>
+      </div>
+
+      <div class="exercise" id="exercise6">
+        <h2>DB Lateral Raise</h2>
+        <div class="exercise-image-container">
+          <img
+            src="./assets/images/push-images/DB-Lateral-Raise.png"
+            alt="DB Lateral Raise demonstration"
+            class="exercise-image"
+          />
+        </div>
+        <div class="warm-up">
+          <h3>Warm-up Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1: 50% weight - 12 reps
+          </div>
+        </div>
+        <div class="working-sets">
+          <h3>Working Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1: 10-12 reps<br />
+            <input type="checkbox" /> Set 2: 10-12 reps<br />
+            <input type="checkbox" /> Set 3: 10-12 reps
+          </div>
+        </div>
+        <button
+          class="complete-button"
+          onclick="markExerciseComplete('exercise6')"
+        >
+          Mark Exercise Complete
+        </button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
