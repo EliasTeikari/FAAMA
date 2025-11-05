@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legs Workout</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <h1>Legs Workout</h1>
+    <div id="workout-container">
+      <div class="exercise" id="exercise1">
+        <h2>Seated leg curl</h2>
+        <div class="exercise-image-container">
+          <img
+            src="./assets/images/legs-images/seated leg curl.png"
+            alt="Seated leg curl"
+            class="exercise-image"
+          />
+        </div>
+        <div class="warm-up">
+          <h3>Warm-up Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1<br />
+            <input type="checkbox" /> Set 2
+          </div>
+        </div>
+        <div class="working-sets">
+          <h3>Working Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1: 8-10 reps<br />
+            <input type="checkbox" /> Set 2: 8-10 reps<br />
+            <input type="checkbox" /> Set 3: 8-10 reps
+          </div>
+        </div>
+        <button
+          class="complete-button"
+          onclick="markExerciseComplete('exercise1')"
+        >
+          Mark Exercise Complete
+        </button>
+      </div>
+
+      <div class="exercise" id="exercise2">
+        <h2>Machine hip adduction</h2>
+        <div class="exercise-image-container">
+          <img
+            src="./assets/images/legs-images/machine hip adduction.png"
+            alt="Machine hip adduction"
+            class="exercise-image"
+          />
+        </div>
+        <div class="warm-up">
+          <h3>Warm-up Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1
+          </div>
+        </div>
+        <div class="working-sets">
+          <h3>Working Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1: 10-12 reps<br />
+            <input type="checkbox" /> Set 2: 10-12 reps<br />
+            <input type="checkbox" /> Set 3: 10-12 reps
+          </div>
+        </div>
+        <button
+          class="complete-button"
+          onclick="markExerciseComplete('exercise2')"
+        >
+          Mark Exercise Complete
+        </button>
+      </div>
+
+      <div class="exercise" id="exercise3">
+        <h2>Smith machine squat</h2>
+        <div class="exercise-image-container">
+          <img
+            src="./assets/images/legs-images/smith machine squat.png"
+            alt="Smith machine squat"
+            class="exercise-image"
+          />
+        </div>
+        <div class="warm-up">
+          <h3>Warm-up Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1<br />
+            <input type="checkbox" /> Set 2<br />
+            <input type="checkbox" /> Set 3<br />
+            <input type="checkbox" /> Set 4
+          </div>
+        </div>
+        <div class="working-sets">
+          <h3>Working Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1: 4 reps (heaviest weight)<br />
+            <input type="checkbox" /> Set 2: 6 reps (10% less weight)<br />
+            <input type="checkbox" /> Set 3: 8 reps (10% less weight)
+          </div>
+        </div>
+        <button
+          class="complete-button"
+          onclick="markExerciseComplete('exercise3')"
+        >
+          Mark Exercise Complete
+        </button>
+      </div>
+
+      <div class="exercise" id="exercise4">
+        <h2>Leg extension</h2>
+        <div class="exercise-image-container">
+          <img
+            src="./assets/images/legs-images/leg extension.png"
+            alt="Leg extension"
+            class="exercise-image"
+          />
+        </div>
+        <div class="warm-up">
+          <h3>Warm-up Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1<br />
+            <input type="checkbox" /> Set 2
+          </div>
+        </div>
+        <div class="working-sets">
+          <h3>Working Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1: 10-12 reps<br />
+            <input type="checkbox" /> Set 2: 10-12 reps<br />
+            <input type="checkbox" /> Set 3: 10-12 reps
+          </div>
+        </div>
+        <button
+          class="complete-button"
+          onclick="markExerciseComplete('exercise4')"
+        >
+          Mark Exercise Complete
+        </button>
+      </div>
+
+      <div class="exercise" id="exercise5">
+        <h2>DB calf jump</h2>
+        <div class="exercise-image-container">
+          <img
+            src="./assets/images/legs-images/db calf jump.png"
+            alt="DB calf jump"
+            class="exercise-image"
+          />
+        </div>
+        <div class="warm-up">
+          <h3>Warm-up Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1
+          </div>
+        </div>
+        <div class="working-sets">
+          <h3>Working Sets:</h3>
+          <div class="set-tracker">
+            <input type="checkbox" /> Set 1: 12-15 reps<br />
+            <input type="checkbox" /> Set 2: 12-15 reps<br />
+            <input type="checkbox" /> Set 3: 12-15 reps
+          </div>
+        </div>
+        <button
+          class="complete-button"
+          onclick="markExerciseComplete('exercise5')"
+        >
+          Mark Exercise Complete
+        </button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
