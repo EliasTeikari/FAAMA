@@ -59,7 +59,7 @@
 
 .exercise-image {
   width: 100%;
-  max-width: 300px;
+  max-width: 315px;
   height: 200px;
   object-fit: cover;
   border-radius: 4px;
@@ -69,5 +69,5 @@
 }
 
 .exercise-image-container {
-  margin: 10px 0;
+  margin: 10x 0;
 }
