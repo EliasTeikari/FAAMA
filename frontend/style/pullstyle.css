@@ -1,0 +1,73 @@
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Workout styles */
+.exercise {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.completed {
+  background-color: #e8ffe8;
+  border-color: #90ee90;
+}
+
+.set-tracker {
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+.exercise h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+.exercise h3 {
+  color: #666;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.complete-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.complete-button:hover {
+  background-color: #45a049;
+}
+
+.exercise-image {
+  width: 100%;
+  max-width: 315px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 10px 0;
+  background-color: #f0f0f0;
+  display: block;
+}
+
+.exercise-image-container {
+  margin: 10x 0;
+}
