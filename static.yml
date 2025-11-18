@@ -1,0 +1,15 @@
+# Static site configuration for FAAMA
+# This tells the deployment platform where to find the static files
+
+# Root directory where index.html is located
+root: frontend
+
+# Publish directory (where the static files are served from)
+publish: frontend
+
+# Build command (empty since this is a static site with no build step)
+build: ""
+
+# Entry point
+entrypoint: index.html
+
