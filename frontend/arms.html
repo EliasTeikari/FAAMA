@@ -6,18 +6,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>Arms and Abs Workout</title>
-  <!-- Point to the CSS file inside the frontend folder so paths resolve from repository root -->
-  <link rel="stylesheet" href="frontend/style/armsstyle.css" />
+  <title>Arms Workout</title>
+  <!-- Use same stylesheet as pull.html (relative to frontend/) -->
+  <link rel="stylesheet" href="style/pullstyle.css" />
   </head>
   <body>
-    <h1>Arms and Abs Workout</h1>
+    <h1>Arms Workout</h1>
     <div id="workout-container">
       <div class="exercise" id="exercise1">
         <h2>EZ-Bar Skull Crushers</h2>
         <div class="exercise-image-container">
           <img
-            src="https://tse1.mm.bing.net/th/id/OIP.J4kBgQT0oQgOhoR5D4FzXgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
+            src="assets/images/arms-images/skullcrushers.png"
             alt="EZ-Bar Skull Crushers demonstration"
             class="exercise-image"
           />
@@ -48,7 +48,7 @@
         <h2>Bayesian Curls</h2>
         <div class="exercise-image-container">
           <img
-            src="https://tse3.mm.bing.net/th/id/OIP.a7nJ5jdtBIuOhx0j24VN5wHaHa?w=1024&h=1024&rs=1&pid=ImgDetMain&o=7&rm=3"
+            src="assets/images/arms-images/Bayesiancurl.png"
             alt="Bayesian Curls demonstration"
             class="exercise-image"
           />
@@ -80,7 +80,7 @@
         <h2>Tricep pushdowns</h2>
         <div class="exercise-image-container">
           <img
-            src="https://fitwill.app/api/image/1605?p=1&w=1024&h=1024"
+            src="assets/images/arms-images/TricepPressdown.png"
             alt="Tricep pushdowns demonstration"
             class="exercise-image"
           />
@@ -105,7 +105,7 @@
         <h2>Reverse-Grip Cable Curl</h2>
         <div class="exercise-image-container">
           <img
-            src="https://fitwill.app/api/image/1608?p=1&w=1920&h=1080"
+            src="assets/images/arms-images/ReversegripCablecurl.png"
             alt="Reverse-Grip Cable Curl demonstration"
             class="exercise-image"
           />
@@ -127,11 +127,11 @@
       </div>
 
       <div class="exercise" id="exercise5">
-        <h2>Cable crunches</h2>
+        <h2>Roman chair leg raises</h2>
         <div class="exercise-image-container">
           <img
-            src="https://training.fit/wp-content/uploads/2020/01/kabelzugcrunches-800x448.png"
-            alt="Cable crunches demonstration"
+            src="assets/images/arms-images/RomanLegraise.png"
+            alt="Roman chair leg raises demonstration"
             class="exercise-image"
           />
         </div>
@@ -146,32 +146,6 @@
         <button
           class="complete-button"
           onclick="markExerciseComplete('exercise5')"
-        >
-          Mark Exercise Complete
-        </button>
-      </div>
-
-      <div class="exercise" id="exercise6">
-        <h2>Hanging leg raises</h2>
-        <div class="exercise-image-container">
-          <img
-            src="https://training.fit/wp-content/uploads/2020/01/haengendes-knieheben-1024x573.png"
-            alt="Hanging leg raises demonstration"
-            class="exercise-image"
-          />
-       
-        </div>
-        <div class="working-sets">
-          <h3>Working Sets:</h3>
-          <div class="set-tracker">
-            <input type="checkbox" /> Set 1: 10-15 reps<br />
-            <input type="checkbox" /> Set 2: 10-15 reps<br />
-            <input type="checkbox" /> Set 3: 10-15 reps
-          </div>
-        </div>
-        <button
-          class="complete-button"
-          onclick="markExerciseComplete('exercise6')"
         >
           Mark Exercise Complete
         </button>
