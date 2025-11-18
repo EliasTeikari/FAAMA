@@ -1,3 +1,10 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .btn {
   display: inline-block;
   padding: 10px 20px;
