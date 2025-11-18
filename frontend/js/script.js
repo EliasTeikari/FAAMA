@@ -1,19 +1,15 @@
-// Function to mark an exercise as complete
 function markExerciseComplete(exerciseId) {
   const exercise = document.getElementById(exerciseId);
   exercise.classList.toggle("completed");
 
-  // Check/uncheck all sets when marking exercise as complete/incomplete
   const checkboxes = exercise.querySelectorAll('input[type="checkbox"]');
   checkboxes.forEach(
     (checkbox) => (checkbox.checked = exercise.classList.contains("completed"))
   );
 
-  // Save progress to localStorage
   saveProgress();
 }
 
-// Function to save progress to localStorage
 function saveProgress() {
   const exercises = document.querySelectorAll(".exercise");
   const progress = {};
@@ -33,7 +29,7 @@ function saveProgress() {
   localStorage.setItem("pushWorkoutProgress", JSON.stringify(progress));
 }
 
-// Function to load progress from localStorage
+
 function loadProgress() {
   const savedProgress = localStorage.getItem("pushWorkoutProgress");
   if (savedProgress) {
@@ -54,10 +50,8 @@ function loadProgress() {
   }
 }
 
-// Load progress when the page loads
 document.addEventListener("DOMContentLoaded", loadProgress);
 
-// Save progress when individual sets are checked/unchecked
 document.addEventListener("change", function (e) {
   if (e.target.type === "checkbox") {
     saveProgress();
