@@ -3,20 +3,39 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .btn {
-  display: inline-block;
-  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
   background-color: #007bff;
   color: white;
-  border-radius: 6px;
+  border-radius: 12px;
   text-decoration: none;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .btn:hover {
   background-color: #0056b3;
+  transform: scale(1.02);
 }
 
 .exercise {
