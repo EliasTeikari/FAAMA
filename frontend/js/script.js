@@ -6,6 +6,7 @@ function getPageKey() { // Autor: Markus Maripuu
 }
 
 function markExerciseComplete(exerciseId) {
+  // funktsioon märgib, kas harjutus on tehtud
   const exercise = document.getElementById(exerciseId);
   exercise.classList.toggle("completed");
 
@@ -39,6 +40,7 @@ function saveProgress() { // Autor: Elias Teikari
 
 
 function loadProgress() {
+  // funktsioon laeb harjutuste staatuse (tehtud või ei)
   const savedProgress = localStorage.getItem(getPageKey());
   if (savedProgress) {
     const progress = JSON.parse(savedProgress);
