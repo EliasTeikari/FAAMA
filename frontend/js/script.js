@@ -10,7 +10,8 @@ function markExerciseComplete(exerciseId) {
   saveProgress();
 }
 
-function saveProgress() {
+function saveProgress() { // Autor: Elias Teikari
+  // funktsioon salvestab harjutuste progressi
   const exercises = document.querySelectorAll(".exercise");
   const progress = {};
 
@@ -21,12 +22,12 @@ function saveProgress() {
       (checkbox) => checkbox.checked
     );
     progress[exerciseId] = {
-      completed: exercise.classList.contains("completed"),
-      sets: checkboxStates,
+      completed: exercise.classList.contains("completed"), // kas harjutus on lõpetatud
+      sets: checkboxStates, // checkboxide olekud
     };
   });
 
-  localStorage.setItem("pushWorkoutProgress", JSON.stringify(progress));
+  localStorage.setItem("pushWorkoutProgress", JSON.stringify(progress)); // salvestame local storage'i
 }
 
 
