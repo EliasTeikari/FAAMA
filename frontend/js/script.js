@@ -1,3 +1,10 @@
+function getPageKey() { // Autor: Markus Maripuu
+  // funktsioon tagastab lehe spetsiifilise võtme local storage'i jaoks, et eristada erinevate lehtede harjutuste progressi
+  const path = window.location.pathname;
+  const pageName = path.split("/").pop() || "home"; 
+  return `workoutProgress_${pageName}`;
+}
+
 function markExerciseComplete(exerciseId) {
   const exercise = document.getElementById(exerciseId);
   exercise.classList.toggle("completed");
@@ -27,12 +34,12 @@ function saveProgress() { // Autor: Elias Teikari
     };
   });
 
-  localStorage.setItem("pushWorkoutProgress", JSON.stringify(progress)); // salvestame local storage'i
+  localStorage.setItem(getPageKey(), JSON.stringify(progress)); // salvestame local storage'i
 }
 
 
 function loadProgress() {
-  const savedProgress = localStorage.getItem("pushWorkoutProgress");
+  const savedProgress = localStorage.getItem(getPageKey());
   if (savedProgress) {
     const progress = JSON.parse(savedProgress);
     Object.keys(progress).forEach((exerciseId) => {
